@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Mensaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 200px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons svg {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="cid:logo_cid" alt="Logo de tu empresa">
+        </div>
+        <h2>{{MensajeBody}}</h2>
+        {{#if Nombre}}
+        <p><span class="highlight">Nombre:</span> {{Nombre}}</p>
+        <p><span class="highlight">Email:</span> {{Email}}</p>
+        <p><span class="highlight">Teléfono:</span> {{Telefono}}</p>
+        <p><span class="highlight">Empresa:</span> {{Empresa}}</p>
+        <p><span class="highlight">Puesto:</span> {{Puesto}}</p>
+        {{/if}}
+        <div class="footer">
+            <p>Este mensaje fue enviado automáticamente desde el formulario de contacto.</p>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@centroplaton?_t=ZM-8svmly8B4dR&_r=1" target="_blank"><img src="cid:tik_cid" alt="TikTok" style="width: 30px; height: 30px;"></a>
+                <a href="https://www.instagram.com/centro_platon/" target="_blank"><img src="cid:ins_cid" alt="Instagram" style="width: 30px; height: 30px;"></a>
+                <a href="https://www.facebook.com/CentroEducativoPlaton?locale=es_LA" target="_blank"><img src="cid:face_cid" alt="Facebook" style="width: 30px; height: 30px;"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
